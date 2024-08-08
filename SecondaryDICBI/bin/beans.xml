@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<bean id="s" class = "com.model.Student">
+<constructor-arg name="id" value= "101"></constructor-arg>
+<constructor-arg name="name" value= "Balram"></constructor-arg>
+</bean>
+
+<bean id="c" class = "com.model.College">
+<constructor-arg name="address" value= "Akurdi"></constructor-arg>
+<constructor-arg name="student" ref= "s"></constructor-arg>
+</bean>
+
+
+</beans>
