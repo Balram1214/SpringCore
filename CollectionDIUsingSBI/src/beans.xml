@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="s1" class="com.model.Student">
+		<property name="list">
+			<list>
+				<value>101</value>
+				<value>102</value>
+				<value>103</value>
+			</list>
+		</property>
+
+		<property name="set">
+			<set>
+				<value>Balram</value>
+				<value>Ajay</value>
+				<value>Vijay</value>
+			</set>
+		</property>
+
+		<property name="map">
+			<map>
+				<entry key="201" value="Balram"></entry>
+				<entry key="202" value="Shweta"></entry>
+				<entry key="203" value="Ajay"></entry>
+			</map>
+		</property>
+
+
+
+	</bean>
+
+</beans>
